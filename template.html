@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>CI-CD</title>
+    <style>
+      .msg-box {
+        margin: 0 auto;
+        background-color: __status-color__;
+        width: 500px;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+
+    <script>
+      const updateStatus = function() {
+        setInterval(() => location.reload(), 1000);
+      };
+    </script>
+  </head>
+  ​
+  <body style="background-color:statusColor" onload="updateStatus()">
+    <div class="msg-box">
+      <h1>Settlers</h1>
+      <h2>Committer Name: __committer-name__</h2>
+      <h2>Commit Sha: __commit-sha__</h2>
+      <h2>Status: __status__</h2>
+    </div>
+  </body>
+</html>
