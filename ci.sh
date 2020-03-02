@@ -1,13 +1,13 @@
 #! /usr/bin/env sh
 ​
-userName=step-batch-7
-repoName=softwareSamurai-settlers
+userName=user-name
+repoName=repo-name
 ​
 lastCommitSha=""
 
 while :
 do
-  curl -H "Authorization: token ebb34770dd011e4d3e8a2c6155ccf5ea3cbf35ea" https://api.github.com/repos/$userName/$repoName/commits/master > latestCommit.txt
+  curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com/repos/$userName/$repoName/commits/master > latestCommit.txt
 
   latestCommitSha=$(cat latestCommit.txt | grep sha | head -1 | cut -d\" -f4)
   latestCommitterName=$(cat latestCommit.txt | grep login | head -1 | cut -d\" -f4)
