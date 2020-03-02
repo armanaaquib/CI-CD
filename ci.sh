@@ -7,7 +7,7 @@ touch lastCommitSha.txt
 
 while :
 do
-  curl -H "Authorization: token 70c1cc41aa5ccb5f7368ee5afd305e01e20a9e06" https://api.github.com/repos/$userName/$repoName/commits/master > latestCommit.txt
+  curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com/repos/$userName/$repoName/commits/master > latestCommit.txt
 
   latestCommitSha=$(cat latestCommit.txt | grep sha | head -1 | cut -d\" -f4)
   latestCommitterName=$(cat latestCommit.txt | grep login | head -1 | cut -d\" -f4)
