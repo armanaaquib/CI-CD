@@ -11,7 +11,6 @@ do
 
   latestCommitSha=$(cat latestCommit.txt | grep sha | head -1 | cut -d\" -f4)
   latestCommitterName=$(cat latestCommit.txt | grep login | head -1 | cut -d\" -f4)
-​
   if [ "$latestCommitSha" != "$lastCommitSha" ]
   then
     cd ../$repoName
