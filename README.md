@@ -8,7 +8,7 @@ Welcome, We request you to read all the guidelines before using the tool.
 > git clone https://github.com/armanaaquib/CI-Tool.git
 ```
 
-2. create OAUTH-TOKEN.txt and your oauth token
+2. create OAUTH-TOKEN.txt and add your oauth token
 
 ```
 > CI-Tool$ echo your-personal-access-token > OAUTH-TOKEN.txt
