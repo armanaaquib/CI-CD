@@ -1,4 +1,4 @@
-# CI-CD
+# CI-Tool
 
 Welcome, We request you to read all the guidelines before using the tool.
 
@@ -8,15 +8,13 @@ Welcome, We request you to read all the guidelines before using the tool.
 > git clone https://github.com/armanaaquib/CI-Tool.git
 ```
 
-2. Update username, repo-name and oauth-token in ci.sh
+2. create OAUTH-TOKEN.txt and your oauth token
 
 ```
-userName=user-name -> userName=armanaaquib
-repoName=repo-name -> repoName=CI-Tool
-"Authorization: token OAUTH-TOKEN" -> "Authorization: token your-personal-access-token"
+> CI-Tool$ echo your-personal-access-token > OAUTH-TOKEN.txt
 ```
 
-3. Give executabe permission to ci.sh
+3. Give executable permission to ci.sh
 
 ```
 > CI-Tool$ chmod +x ci.sh
@@ -28,8 +26,11 @@ repoName=repo-name -> repoName=CI-Tool
 > CI-Tool$ ./ci.sh
 ```
 
-5. open ci.html
+5. enter username and repo-name
 
 ```
-> CI-Tool$ open ci.html
+Enter User-Name:
+armanaaquib
+Enter Repo-Name:
+CI-Tool
 ```
