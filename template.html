@@ -3,10 +3,13 @@
     <title>CI</title>
     <meta http-equiv="refresh" content="1" />
     <style>
+      body {
+      }
       .msg-box {
-        margin: 0 auto;
         background-color: __status-color__;
-        width: 500px;
+        margin: 10px auto;
+        width: 80%;
+        height: 80%;
         text-align: center;
         padding: 10px;
       }
@@ -16,7 +19,9 @@
   <body style="background-color:statusColor">
     <div class="msg-box">
       <h1>__repo-name__</h1>
+      <hr />
       <h2>Latest Commit</h2>
+      <br />
       <h3>Committer Name: __committer-name__</h3>
       <h3>Commit Sha: __commit-sha__</h3>
       <h3>Status: __status__</h3>

@@ -35,7 +35,7 @@ do
     else
       cd ..
       echo "tests are passing"
-      updateDisplayPage green "$latestCommitterName" "$latestCommitSha" "tests are passing"
+      updateDisplayPage "rgb(21, 216, 21)" "$latestCommitterName" "$latestCommitSha" "tests are passing"
       lastCommitSha=$(echo $latestCommitSha)
     fi
     rm -rf $repoName
