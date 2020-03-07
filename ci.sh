@@ -27,6 +27,8 @@ do
     git clone https://github.com/$userName/$repoName.git
     cd $repoName
     npm install
+    mocha --recursive --reporter mocha-simple-html-reporter>detail.html
+    cp detail.html ../
     npm test
     if [ $? -ne 0 ]
     then
