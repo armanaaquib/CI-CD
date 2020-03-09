@@ -20,7 +20,7 @@ do
 
   latestCommitSha=$(node -p 'require("./latestCommit.json").sha;')
   latestCommitterName=$(node -p 'require("./latestCommit.json").commit.committer.name;')
-  latestCommitMsg=$(node -p 'require("./latestCommit.json").commit.message.replace(/\|/g,"\\|").replace(/\//g,"\\/");')
+  latestCommitMsg=$(node -p 'require("./latestCommit.json").commit.message.split("\n")[0].replace(/\|/g,"\\|").replace(/\//g,"\\/");')
 
   if [ "$latestCommitSha" != "$lastCommitSha" ]
   then
